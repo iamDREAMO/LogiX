@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
-import database
+import sqlite3_database
 
 class LogiXApp:
     def __init__(self, root):
@@ -8,7 +8,7 @@ class LogiXApp:
         self.root.title("LogiX - Tkinter + SQLite3 User Login App")
         self.root.geometry("600x400")
         self.root.resizable(False, False)
-        database.setup_tables()
+        sqlite3_database.setup_tables()
         self.home_screen()
 
     def home_screen(self):
@@ -38,7 +38,7 @@ class LogiXApp:
 
         def register():
             if username.get() and password.get():
-                database.insert_user(username.get(), password.get(), cn.get())
+                sqlite3_database.insert_user(username.get(), password.get(), cn.get())
                 messagebox.showinfo("Success", "User Registered!")
                 self.home_screen()
             else:
@@ -62,7 +62,7 @@ class LogiXApp:
         tk.Entry(frame, textvariable=password, show="*").place(x=280, y=190)
 
         def login():
-            user = database.validate_user(username.get(), password.get())
+            user = sqlite3_database.validate_user(username.get(), password.get())
             if user:
                 self.dashboard()
             else:
