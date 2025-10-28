@@ -64,7 +64,7 @@ A more advanced desktop version with enhanced user management and password encry
 
 ## **Developer**
 
-**Benedict Kofi Amofah**
+  **Benedict Kofi Amofah**
 
 GitHub: [github.com/iamDREAMO](https://github.com/iamDREAMO)
 
