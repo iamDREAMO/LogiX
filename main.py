@@ -1,6 +1,18 @@
-from gui import LoginApp
+"""
+LogiX Student Management System
+Entry point of the application
+"""
+from tkinter import Tk
+from gui import create_home_screen
+
+def main():
+    root = Tk()
+    root.geometry('600x400')
+    root.resizable(0, 0)
+    root.title('LogiX - Student Management System')
+    
+    create_home_screen(root)
+    root.mainloop()
 
 if __name__ == "__main__":
-    app = LoginApp()
-    app.run()
-
+    main()
