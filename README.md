@@ -1,21 +1,19 @@
 # LogiX - Student Management System
 
-[![Python Version](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://www.python.org/downloads/)
+[![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)](https://github.com)
 
 ## Overview
 
-LogiX is a desktop application designed for student record management. Built with Python's Tkinter framework and SQLite database, it provides an intuitive graphical interface for educational institutions to manage student academic records, including enrollment data and subject-wise performance metrics.
+LogiX is a desktop application designed for student record management. Built with Python's Tkinter framework and SQLite3 database, it provides an intuitive graphical interface for educational institutions to manage student academic records such as subject-wise performance metrics.
 
 ## Features
 
 ### Core Functionality
 
 - **User Authentication System**
-  - Secure user registration with credential validation
-  - Login system with encrypted password handling
-  - Session management and logout capabilities
+- User authentication system with secure registration, login, and session management
 
 - **Student Record Management**
   - **Create**: Add new student records with roll number, name, and subject scores
@@ -25,22 +23,14 @@ LogiX is a desktop application designed for student record management. Built wit
   - **Search**: Query student records by roll number with instant results
 
 - **Academic Performance Tracking**
-  - Subject-wise score management (Physics, Chemistry, Mathematics)
-  - Comprehensive data display with sorting capabilities
-  - Real-time data synchronization across all views
+- Academic performance tracking with subject-wise scores and real-time data synchronization
 
-### User Interface
-
-- Clean and intuitive tabbed interface
-- Color-coded visual elements for enhanced usability
-- Responsive design with fixed dimensions for consistency
-- User-friendly form layouts with clear labeling
 
 ## System Requirements
 
 ### Prerequisites
 
-- **Python**: Version 3.7 or higher
+- **Python**: Version 3.10 or higher
 - **Operating System**: Windows, Linux, or macOS
 - **Display**: Minimum resolution of 800x600 pixels
 
@@ -68,7 +58,7 @@ cd LogiX
 python --version
 ```
 
-Ensure the version is 3.7 or higher.
+Ensure the version is 3.10 or higher.
 
 ### Step 3: Verify Tkinter Installation
 
@@ -76,7 +66,7 @@ Ensure the version is 3.7 or higher.
 python -c "import tkinter"
 ```
 
-If Tkinter is not installed, refer to the [Tkinter Installation Guide](#tkinter-installation) below.
+If Tkinter is not installed, refer to the [Tkinter Installation Guide](https://docs.python.org/3/library/tkinter.html) below.
 
 ### Step 4: Run the Application
 
@@ -181,41 +171,6 @@ LogiX/
 | UPASS | TEXT | Password | - |
 | CN | TEXT | Contact Number | - |
 
-## Architecture
-
-### Module Overview
-
-#### `main.py`
-- Application entry point
-- Initializes the Tkinter root window
-- Configures window properties
-- Launches the home screen
-
-#### `gui.py`
-- Contains all graphical user interface components
-- Implements screen navigation logic
-- Handles user input and events
-- Manages form validation and user feedback
-
-#### `database.py`
-- Provides abstraction layer for database operations
-- Implements CRUD operations for student records
-- Handles user authentication
-- Manages database connections and transactions
-
-### Design Patterns
-
-- **Separation of Concerns**: Clear division between UI, business logic, and data layers
-- **Modular Architecture**: Independent modules for maintainability
-- **Single Responsibility Principle**: Each function has a specific purpose
-
-## Security Considerations
-
-- Passwords are displayed as masked characters during input
-- Database credentials are handled through secure connection protocols
-- Input validation prevents SQL injection vulnerabilities
-- Session management ensures proper user authentication
-
 ## Troubleshooting
 
 ### Common Issues
@@ -257,7 +212,7 @@ LogiX/
 - Check system display scaling settings
 - Verify Python and Tkinter versions are up to date
 
-## Future Enhancements
+## Future Enhancements (Open to Contributors!)
 
 - [ ] Advanced search filters (by name, score range)
 - [ ] Data export functionality (CSV, PDF)
