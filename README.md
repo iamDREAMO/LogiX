@@ -1,4 +1,4 @@
-# LogiX - Student Management System
+# LogiX - Student Records Manager
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -195,23 +195,6 @@ LogiX/
 
 - **Windows**: Reinstall Python and ensure "tcl/tk and IDLE" is selected
 
-#### Database Permission Errors
-
-**Error**: Database file cannot be created or accessed
-
-**Solution**:
-- Ensure write permissions in the application directory
-- Run the application with appropriate user privileges
-
-#### Display Issues
-
-**Problem**: Window appears too small or elements are misaligned
-
-**Solution**:
-- Ensure display resolution is at least 800x600
-- Check system display scaling settings
-- Verify Python and Tkinter versions are up to date
-
 ## Future Enhancements (Open to Contributors!)
 
 - [ ] Advanced search filters (by name, score range)
@@ -235,10 +218,7 @@ Contributions are welcome! Please follow these guidelines:
 
 ### Code Standards
 
-- Follow PEP 8 style guidelines
-- Include docstrings for all functions
-- Add comments for complex logic
-- Write meaningful commit messages
+ - Follow PEP 8 style guidelines, include docstrings, comment complex logic, and write meaningful commit messages
 
 ## License
 
@@ -246,8 +226,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Developer
 
-- **Benedict Kofi Amofah** - *Initial work* - [YourGitHub](https://github.com/yourusername)
-
+ - **Benedict Kofi Amofah** - [LinkedIn](https://www.linkedin.com/in/benedict-kofi-amofah) | [GitHub](https://github.com/iamDREAMO)
 ## Support
 
 For support, questions, or feedback:
@@ -257,7 +236,7 @@ For support, questions, or feedback:
 
 ## Version History
 
-- **v1.0.0** (2025-10-29)
+- **v1.0.0** (2025-10-28)
   - Initial release
   - Core CRUD functionality
   - User authentication system
