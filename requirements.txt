@@ -1,3 +1,21 @@
-tkinter
-sqlite3
+# LogiX Student Management System - Dependencies
 
+# No external dependencies required
+# All modules are part of Python's standard library:
+# - tkinter (GUI framework)
+# - sqlite3 (Database)
+
+# Note: tkinter comes pre-installed with most Python distributions
+# If tkinter is not available, install it based on your OS:
+# 
+# Ubuntu/Debian:
+#   sudo apt-get install python3-tk
+# 
+# Fedora:
+#   sudo dnf install python3-tkinter
+# 
+# macOS:
+#   tkinter comes pre-installed with Python from python.org
+# 
+# Windows:
+#   tkinter comes pre-installed with Python installer
