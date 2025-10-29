@@ -13,7 +13,7 @@ LogiX is a desktop application designed for student record management. Built wit
 ### Core Functionality
 
 - **User Authentication System**
-- User authentication system with secure registration, login, and session management
+ - User authentication system with secure registration, login, and session management
 
 - **Student Record Management**
   - **Create**: Add new student records with roll number, name, and subject scores
@@ -23,7 +23,7 @@ LogiX is a desktop application designed for student record management. Built wit
   - **Search**: Query student records by roll number with instant results
 
 - **Academic Performance Tracking**
-- Academic performance tracking with subject-wise scores and real-time data synchronization
+ - Academic performance tracking with subject-wise scores and real-time data synchronization
 
 
 ## System Requirements
@@ -244,23 +244,16 @@ Contributions are welcome! Please follow these guidelines:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Authors
+## Developer
 
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
-
-## Acknowledgments
-
-- Python Software Foundation for Python and Tkinter
-- SQLite Development Team for the database engine
-- All contributors who have helped improve this project
+- **Benedict Kofi Amofah** - *Initial work* - [YourGitHub](https://github.com/yourusername)
 
 ## Support
 
 For support, questions, or feedback:
 
-- **Email**: support@logix.example.com
-- **Issues**: [GitHub Issues](https://github.com/yourusername/LogiX/issues)
-- **Documentation**: [Wiki](https://github.com/yourusername/LogiX/wiki)
+- **Email**: benedictkofiamofah@gmail.com
+- **Issues**: [GitHub Issues](https://github.com/iamDREAMO/LogiX/issues)
 
 ## Version History
 
