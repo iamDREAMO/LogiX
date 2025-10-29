@@ -6,7 +6,7 @@
 
 ## Overview
 
-LogiX is a comprehensive desktop application designed for efficient student record management. Built with Python's Tkinter framework and SQLite database, it provides an intuitive graphical interface for educational institutions to manage student academic records, including enrollment data and subject-wise performance metrics.
+LogiX is a desktop application designed for student record management. Built with Python's Tkinter framework and SQLite database, it provides an intuitive graphical interface for educational institutions to manage student academic records, including enrollment data and subject-wise performance metrics.
 
 ## Features
 
