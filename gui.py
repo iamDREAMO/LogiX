@@ -43,20 +43,20 @@ def create_insert_tab(ntb):
     maths = StringVar()
     
     # Labels and Entries
-    Label(f4, font=('Calibri', 15), text='Enter Roll No.', bg='LightBlue', fg='Red').place(x=150, y=50)
-    Entry(f4, font=('Calibri', 15), textvariable=roll_no).place(x=300, y=50, width=100)
+    Label(f4, font=('Cambria', 15), text='Enter Roll No.', bg='LightBlue', fg='Red').place(x=150, y=50)
+    Entry(f4, font=('Cambria', 15), textvariable=roll_no).place(x=300, y=50, width=100)
     
-    Label(f4, font=('Calibri', 15), text='Enter Name', bg='LightBlue', fg='Red').place(x=150, y=100)
-    Entry(f4, font=('Calibri', 15), textvariable=name).place(x=300, y=100, width=100)
+    Label(f4, font=('Cambria', 15), text='Enter Name', bg='LightBlue', fg='Red').place(x=150, y=100)
+    Entry(f4, font=('Cambria', 15), textvariable=name).place(x=300, y=100, width=100)
     
-    Label(f4, font=('Calibri', 15), text='Enter Phy.', bg='LightBlue', fg='Red').place(x=150, y=150)
-    Entry(f4, font=('Calibri', 15), textvariable=phy).place(x=300, y=150, width=100)
+    Label(f4, font=('Cambria', 15), text='Enter Phy.', bg='LightBlue', fg='Red').place(x=150, y=150)
+    Entry(f4, font=('Cambria', 15), textvariable=phy).place(x=300, y=150, width=100)
     
-    Label(f4, font=('Calibri', 15), text='Enter Chem.', bg='LightBlue', fg='Red').place(x=150, y=200)
-    Entry(f4, font=('Calibri', 15), textvariable=chem).place(x=300, y=200, width=100)
+    Label(f4, font=('Cambria', 15), text='Enter Chem.', bg='LightBlue', fg='Red').place(x=150, y=200)
+    Entry(f4, font=('Cambria', 15), textvariable=chem).place(x=300, y=200, width=100)
     
-    Label(f4, font=('Calibri', 15), text='Enter Maths.', bg='LightBlue', fg='Red').place(x=150, y=250)
-    Entry(f4, font=('Calibri', 15), textvariable=maths).place(x=300, y=250, width=100)
+    Label(f4, font=('Cambria', 15), text='Enter Maths.', bg='LightBlue', fg='Red').place(x=150, y=250)
+    Entry(f4, font=('Cambria', 15), textvariable=maths).place(x=300, y=250, width=100)
     
     def insert_data():
         try:
@@ -75,7 +75,7 @@ def create_insert_tab(ntb):
         except Exception as e:
             messagebox.showerror('Error', f'Failed to insert data: {str(e)}')
     
-    Button(f4, font=('Calibri', 15), text='Insert Data', bg='LightBlue', fg='Red', 
+    Button(f4, font=('Cambria', 15), text='Insert Data', bg='LightBlue', fg='Red', 
            command=insert_data).place(x=250, y=300, width=120, height=30)
 
 # ==================== ShowAll Tab ====================
@@ -125,7 +125,7 @@ def create_search_tab(ntb):
     
     Label(f6, font=('Arial', 12), text='Roll No.', bg='LightBlue', 
           fg='Red').place(x=100, y=50, width=120)
-    Entry(f6, font=('Calibri', 15), textvariable=roll_no).place(x=230, y=50, width=100)
+    Entry(f6, font=('Cambria', 15), textvariable=roll_no).place(x=230, y=50, width=100)
     
     def search_student():
         # Clear previous results
@@ -138,12 +138,12 @@ def create_search_tab(ntb):
         if result:
             labels = ['Name', 'Phy', 'Chem', 'Maths']
             for i, text in enumerate(labels):
-                Label(f6, text=f"{text}: {result[i+1]}", font=('Calibri', 15), 
+                Label(f6, text=f"{text}: {result[i+1]}", font=('Cambria', 15), 
                       bg='LightBlue', fg='Red').place(x=200, y=100 + 50 * i)
         else:
             messagebox.showinfo('Not Found', 'Roll No. not found')
     
-    Button(f6, text='Search', font=('Calibri', 15), 
+    Button(f6, text='Search', font=('Cambria', 15), 
            command=search_student).place(x=350, y=50, width=100, height=30)
 
 # ==================== Update Tab ====================
@@ -156,7 +156,7 @@ def create_update_tab(ntb):
     
     Label(f7, font=('Arial', 12), text='Roll No.', bg='LightBlue', 
           fg='Red').place(x=100, y=50, width=120)
-    Entry(f7, font=('Calibri', 15), textvariable=roll_no).place(x=230, y=50, width=100)
+    Entry(f7, font=('Cambria', 15), textvariable=roll_no).place(x=230, y=50, width=100)
     
     def retrieve_student():
         # Clear previous fields
@@ -179,9 +179,9 @@ def create_update_tab(ntb):
         fields = [('Name', name), ('Phy', phy), ('Chem', chem), ('Maths', maths)]
         
         for i, (label, var) in enumerate(fields):
-            Label(f7, text=f'{label}:', font=('Calibri', 15), bg='LightBlue', 
+            Label(f7, text=f'{label}:', font=('Cambria', 15), bg='LightBlue', 
                   fg='Red').place(x=200, y=100 + 50 * i)
-            Entry(f7, font=('Calibri', 15), textvariable=var).place(x=350, y=100 + 50 * i)
+            Entry(f7, font=('Cambria', 15), textvariable=var).place(x=350, y=100 + 50 * i)
         
         def update_data():
             try:
@@ -191,10 +191,10 @@ def create_update_tab(ntb):
             except Exception as e:
                 messagebox.showerror('Error', f'Failed to update data: {str(e)}')
         
-        Button(f7, text='Update', font=('Calibri', 15), 
+        Button(f7, text='Update', font=('Cambria', 15), 
                command=update_data).place(x=250, y=325, width=120, height=30)
     
-    Button(f7, text='Retrieve', font=('Calibri', 15), 
+    Button(f7, text='Retrieve', font=('Cambria', 15), 
            command=retrieve_student).place(x=350, y=50, width=100, height=30)
 
 # ==================== Delete Tab ====================
@@ -207,7 +207,7 @@ def create_delete_tab(ntb):
     
     Label(f8, font=('Arial', 12), text='Roll No.', bg='LightBlue', 
           fg='Red').place(x=100, y=50, width=120)
-    Entry(f8, font=('Calibri', 15), textvariable=roll_no).place(x=230, y=50, width=100)
+    Entry(f8, font=('Cambria', 15), textvariable=roll_no).place(x=230, y=50, width=100)
     
     def delete_student():
         try:
@@ -218,7 +218,7 @@ def create_delete_tab(ntb):
         except Exception as e:
             messagebox.showerror('Error', f'Failed to delete data: {str(e)}')
     
-    Button(f8, text='Delete', font=('Calibri', 15), 
+    Button(f8, text='Delete', font=('Cambria', 15), 
            command=delete_student).place(x=350, y=50, width=100, height=30)
 
 # ==================== Logout Tab ====================
@@ -233,12 +233,12 @@ def create_home_screen(root):
     f1 = Frame(bg='LightBlue')
     f1.place(x=0, y=0, width=600, height=400)
     
-    Label(f1, text='Welcome to LogiX', font=('Calibri', 20, 'bold'), 
+    Label(f1, text='Welcome to LogiX', font=('Cambria', 20, 'bold'), 
           bg='LightBlue', fg='Red').place(x=180, y=30)
     
-    Button(f1, text='Login', font=('Calibri', 15), 
+    Button(f1, text='Login', font=('Cambria', 15), 
            command=lambda: create_login_screen(root)).place(x=220, y=100, width=100, height=30)
-    Button(f1, text='Register', font=('Calibri', 15), 
+    Button(f1, text='Register', font=('Cambria', 15), 
            command=lambda: create_register_screen(root)).place(x=330, y=100, width=100, height=30)
 
 # ==================== Login Screen ====================
@@ -250,14 +250,14 @@ def create_login_screen(root):
     username = StringVar()
     password = StringVar()
     
-    Label(f2, text='Login', font=('Calibri', 20, 'bold'), 
+    Label(f2, text='Login', font=('Cambria', 20, 'bold'), 
           bg='LightBlue', fg='Red').place(x=260, y=30)
     
     Label(f2, text='Enter Name:', bg='LightBlue', fg='Red').place(x=200, y=100)
-    Entry(f2, font=('Calibri', 15), textvariable=username).place(x=320, y=100, width=120)
+    Entry(f2, font=('Cambria', 15), textvariable=username).place(x=320, y=100, width=120)
     
     Label(f2, text='Enter Password:', bg='LightBlue', fg='Red').place(x=200, y=150)
-    Entry(f2, font=('Calibri', 15), textvariable=password, show='*').place(x=320, y=150, width=120)
+    Entry(f2, font=('Cambria', 15), textvariable=password, show='*').place(x=320, y=150, width=120)
     
     def perform_login():
         if db.validate_login(username.get(), password.get()):
@@ -265,11 +265,11 @@ def create_login_screen(root):
         else:
             messagebox.showerror('Login Failed', 'Invalid username or password')
     
-    Button(f2, text='Login', font=('Calibri', 15), 
+    Button(f2, text='Login', font=('Cambria', 15), 
            command=perform_login).place(x=250, y=200, width=100, height=30)
-    Button(f2, text='Home', font=('Calibri', 15), 
+    Button(f2, text='Home', font=('Cambria', 15), 
            command=lambda: create_home_screen(root)).place(x=20, y=350, width=100, height=30)
-    Button(f2, text='Registration', font=('Calibri', 15), 
+    Button(f2, text='Registration', font=('Cambria', 15), 
            command=lambda: create_register_screen(root)).place(x=480, y=350, width=120, height=30)
 
 # ==================== Register Screen ====================
@@ -282,17 +282,17 @@ def create_register_screen(root):
     password = StringVar()
     contact = StringVar()
     
-    Label(f3, text='Register', font=('Calibri', 20, 'bold'), 
+    Label(f3, text='Register', font=('Cambria', 20, 'bold'), 
           bg='LightBlue', fg='Red').place(x=245, y=30)
     
     Label(f3, text='Enter Name:', bg='LightBlue', fg='Red').place(x=200, y=100)
-    Entry(f3, font=('Calibri', 15), textvariable=username).place(x=320, y=100, width=120)
+    Entry(f3, font=('Cambria', 15), textvariable=username).place(x=320, y=100, width=120)
     
     Label(f3, text='Enter Password:', bg='LightBlue', fg='Red').place(x=200, y=150)
-    Entry(f3, font=('Calibri', 15), textvariable=password, show='*').place(x=320, y=150, width=120)
+    Entry(f3, font=('Cambria', 15), textvariable=password, show='*').place(x=320, y=150, width=120)
     
     Label(f3, text='Enter CN:', bg='LightBlue', fg='Red').place(x=200, y=200)
-    Entry(f3, font=('Calibri', 15), textvariable=contact).place(x=320, y=200, width=120)
+    Entry(f3, font=('Cambria', 15), textvariable=contact).place(x=320, y=200, width=120)
     
     def perform_registration():
         try:
@@ -304,9 +304,9 @@ def create_register_screen(root):
         except Exception as e:
             messagebox.showerror('Error', f'Failed to register: {str(e)}')
     
-    Button(f3, text='Register', font=('Calibri', 15), 
+    Button(f3, text='Register', font=('Cambria', 15), 
            command=perform_registration).place(x=250, y=250, width=120, height=30)
-    Button(f3, text='Home', font=('Calibri', 15), 
+    Button(f3, text='Home', font=('Cambria', 15), 
            command=lambda: create_home_screen(root)).place(x=20, y=350, width=100, height=30)
-    Button(f3, text='Login', font=('Calibri', 15), 
+    Button(f3, text='Login', font=('Cambria', 15), 
            command=lambda: create_login_screen(root)).place(x=480, y=350, width=120, height=30)
