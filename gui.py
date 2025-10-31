@@ -233,7 +233,7 @@ def create_home_screen(root):
     f1 = Frame(bg='Blue')
     f1.place(x=0, y=0, width=600, height=400)
     
-    Label(f1, text='LogiX - \nStudent Records Manager', 
+    Label(f1, text='LogiX - Student \nRecords Manager', 
           font=('Cambria', 20, 'bold'), justify = 'center', 
           bg='Blue', fg='Yellow').pack()
     
