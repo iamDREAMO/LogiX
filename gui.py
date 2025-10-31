@@ -237,9 +237,9 @@ def create_home_screen(root):
           font=('Cambria', 20, 'bold'), justify = 'center', 
           bg="#F0F8FF", fg= "#9F00FF").pack(pady= 30)
     
-    Button(f1, text='Login', font=('Cambria', 15), 
+    Button(f1, text='Login', font=('Cambria', 15), fg= 'White',
            command=lambda: create_login_screen(root)).place(x=220, y=100, width=100, height=30)
-    Button(f1, text='Register', font=('Cambria', 15), 
+    Button(f1, text='Register', font=('Cambria', 15), fg= 'White',
            command=lambda: create_register_screen(root)).place(x=330, y=100, width=100, height=30)
 
 # ==================== Login Screen ====================
