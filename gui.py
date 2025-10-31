@@ -230,7 +230,7 @@ def create_logout_tab(ntb):
 # ==================== Home Screen ====================
 def create_home_screen(root):
     """Create the home/welcome screen"""
-    f1 = Frame(bg='LightBlue')
+    f1 = Frame(bg='Blue')
     f1.place(x=0, y=0, width=600, height=400)
     
     Label(f1, text='LogiX - \nStudent Records Manager', 
