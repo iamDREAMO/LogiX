@@ -9,7 +9,7 @@ def main():
     root = Tk()
     root.geometry('600x400')
     root.resizable(0, 0)
-    root.title('LogiX - Student Management System')
+    root.title('LogiX - Student Records Manager')
     
     create_home_screen(root)
     root.mainloop()
