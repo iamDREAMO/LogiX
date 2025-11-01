@@ -234,13 +234,13 @@ def create_home_screen(root):
     f1.place(x=0, y=0, width=600, height=400)
     
     Label(f1, text='LogiX - Student \nRecords Manager', 
-          font=('Cambria', 20, 'bold'), justify = 'center', 
+          font=('Cambria', 25, 'bold'), justify = 'center', 
           bg="#F0F8FF", fg= "#9F00FF").pack(pady= 50)
     
     Button(f1, text='Login', font=('Cambria', 15), fg= "White", bg= "#9F00FF",
-           command=lambda: create_login_screen(root)).place(x=200, y=180, width=95, height=40)
+           command=lambda: create_login_screen(root)).place(x=200, y=200, width=95, height=40)
     Button(f1, text='Register', font=('Cambria', 15), fg= "White", bg= "#9F00FF",
-           command=lambda: create_register_screen(root)).place(x=300, y=180, width=100, height=40)
+           command=lambda: create_register_screen(root)).place(x=300, y=200, width=100, height=40)
 
 # ==================== Login Screen ====================
 def create_login_screen(root):
