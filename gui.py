@@ -231,7 +231,7 @@ def create_logout_tab(ntb):
 def create_home_screen(root):
     """Create the home/welcome screen"""
     f1 = Frame(bg="#F0F8FF")
-    f1.place(x=0, y=0, width=600, height=600)
+    f1.place(x=0, y=0, width=600, height=400)
     
     Label(f1, text='LogiX - Student \nRecords Manager', 
           font=('Cambria', 20, 'bold'), justify = 'center', 
@@ -251,8 +251,8 @@ def create_login_screen(root):
     username = StringVar()
     password = StringVar()
     
-    Label(f2, text='Login', font=('Cambria', 20, 'bold'), 
-          bg='LightBlue', fg='Red').place(x=260, y=30)
+    Label(f2, text='Login', font=('Cambria', 20, 'bold'), justify = 'center', 
+          bg="#F0F8FF", fg= "#9F00FF").place(x=260, y=30)
     
     Label(f2, text='Enter Name:', bg='LightBlue', fg='Red').place(x=200, y=100)
     Entry(f2, font=('Cambria', 15), textvariable=username).place(x=320, y=100, width=120)
