@@ -245,7 +245,7 @@ def create_home_screen(root):
 # ==================== Login Screen ====================
 def create_login_screen(root):
     """Create the login screen"""
-    f2 = Frame(bg='LightBlue')
+    f2 = Frame(bg="#F0F8FF")
     f2.place(x=0, y=0, width=600, height=400)
     
     username = StringVar()
