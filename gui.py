@@ -255,12 +255,12 @@ def create_login_screen(root):
           bg="#F0F8FF", fg= "#9F00FF").place(x=260, y=30)
     
     Label(f2, text='Enter Name:', bg="#F0F8FF", fg="#9F00FF", 
-          font=('Cambria', 12)).place(x=200, y=100)
-    Entry(f2, font=('Cambria', 15), textvariable=username).place(x=320, y=100, width=120)
+          font=('Cambria', 12)).place(x=150, y=100)
+    Entry(f2, font=('Cambria', 15), textvariable=username).place(x=300, y=100, width=120, height= 35)
     
     Label(f2, text='Enter Password:', bg="#F0F8FF", fg="#9F00FF", 
-          font=('Cambria', 12)).place(x=200, y=150)
-    Entry(f2, font=('Cambria', 15), textvariable=password, show='*').place(x=350, y=150, width=120)
+          font=('Cambria', 12)).place(x=150, y=150)
+    Entry(f2, font=('Cambria', 15), textvariable=password, show='*').place(x=300, y=150, width=120, height=35)
     
     def perform_login():
         if db.validate_login(username.get(), password.get()):
