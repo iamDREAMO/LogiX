@@ -270,8 +270,8 @@ def create_login_screen(root):
         else:
             messagebox.showerror('Login Failed', 'Invalid username or password')
     
-    Button(f2, text='Login', font=('Cambria', 15), fg="White", bg="#9F00FF", 
-           command=perform_login).place(x=250, y=200, width=100, height=30)
+    Button(f2, text='Login', font=('Cambria', 15), fg="White", bg="#9F00FF", justify= CENTER,
+           command=perform_login).place(x=250, y=230, width=100, height=30)
     Button(f2, text='Home', font=('Cambria', 15), fg="White", bg="#9F00FF",
            command=lambda: create_home_screen(root)).place(x=20, y=350, width=100, height=30)
     Button(f2, text='Registration', font=('Cambria', 15), fg="White", bg="#9F00FF",
