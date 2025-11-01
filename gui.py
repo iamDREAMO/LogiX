@@ -251,7 +251,7 @@ def create_login_screen(root):
     username = StringVar()
     password = StringVar()
     
-    Label(f2, text='Login', font=('Cambria', 20, 'bold'), justify = CENTER, 
+    Label(f2, text='Login', font=('Cambria', 25, 'bold'), justify = CENTER, 
           bg="#F0F8FF", fg= "#9F00FF").place(x=260, y=30)
     
     Label(f2, text='Enter Name:', bg="#F0F8FF", fg="#9F00FF", 
