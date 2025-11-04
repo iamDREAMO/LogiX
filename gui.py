@@ -287,8 +287,8 @@ def create_register_screen(root):
     password = StringVar()
     contact = StringVar()
     
-    Label(f3, text='Register', font=('Cambria', 20, 'bold'), 
-          bg='LightBlue', fg='Red').place(x=245, y=30)
+    Label(f3, text='Register', font=('Cambria', 25, 'bold'),justify = CENTER, 
+        bg="#F0F8FF", fg= "#9F00FF").place(x=245, y=30)
     
     Label(f3, text='Enter Name:', bg='LightBlue', fg='Red').place(x=200, y=100)
     Entry(f3, font=('Cambria', 15), textvariable=username).place(x=320, y=100, width=120)
