@@ -292,7 +292,7 @@ def create_register_screen(root):
     
     Label(f3, text='Enter Name:', bg="#F0F8FF", fg="#9F00FF").place(x=100, y=100)
     Entry(f3, bg= "#F1F0EE", font=('Cambria', 12), 
-          textvariable=username).place(x=320, y=100, width=120)
+          textvariable=username).place(x=320, y=100, width=250)
     
     Label(f3, text='Enter Password:', bg="#F0F8FF", fg="#9F00FF").place(x=100, y=150)
     Entry(f3, bg= "#F1F0EE", font=('Cambria', 12), 
