@@ -280,7 +280,7 @@ def create_login_screen(root):
 # ==================== Register Screen ====================
 def create_register_screen(root):
     """Create the registration screen"""
-    f3 = Frame(bg='LightBlue')
+    f3 = Frame(bg="#F0F8FF")
     f3.place(x=0, y=0, width=600, height=400)
     
     username = StringVar()
