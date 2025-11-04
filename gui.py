@@ -290,13 +290,13 @@ def create_register_screen(root):
     Label(f3, text='Register', font=('Cambria', 25, 'bold'),justify = CENTER, 
         bg="#F0F8FF", fg= "#9F00FF").place(x=245, y=30)
     
-    Label(f3, text='Enter Name:', bg='LightBlue', fg='Red').place(x=200, y=100)
+    Label(f3, text='Enter Name:', bg="#F0F8FF", fg="#9F00FF").place(x=200, y=100)
     Entry(f3, font=('Cambria', 12), textvariable=username).place(x=320, y=100, width=120)
     
-    Label(f3, text='Enter Password:', bg='LightBlue', fg='Red').place(x=200, y=150)
+    Label(f3, text='Enter Password:', bg="#F0F8FF", fg="#9F00FF").place(x=200, y=150)
     Entry(f3, font=('Cambria', 12), textvariable=password, show='*').place(x=320, y=150, width=120)
     
-    Label(f3, text='Enter CN:', bg='LightBlue', fg='Red').place(x=200, y=200)
+    Label(f3, text='Enter CN:', bg="#F0F8FF", fg="#9F00FF").place(x=200, y=200)
     Entry(f3, font=('Cambria', 12), textvariable=contact).place(x=320, y=200, width=120)
     
     def perform_registration():
