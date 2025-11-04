@@ -313,8 +313,8 @@ def create_register_screen(root):
             messagebox.showerror('Error', f'Failed to register: {str(e)}')
     
     Button(f3, text='Register', font=('Cambria', 15),  bg="#9F00FF", fg="White",
-           command=perform_registration).place(x=250, y=250, width=120, height=30)
+           command=perform_registration).place(x=250, y=250, width=120, height=35)
     Button(f3, text='Home', font=('Cambria', 15),  bg="#9F00FF", fg="White",
-           command=lambda: create_home_screen(root)).place(x=20, y=350, width=100, height=30)
+           command=lambda: create_home_screen(root)).place(x=20, y=350, width=100, height=35)
     Button(f3, text='Login', font=('Cambria', 15),  bg="#9F00FF", fg="White",
-           command=lambda: create_login_screen(root)).place(x=480, y=350, width=120, height=30)
+           command=lambda: create_login_screen(root)).place(x=480, y=350, width=120, height=35)
