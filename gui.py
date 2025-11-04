@@ -300,7 +300,7 @@ def create_register_screen(root):
     
     Label(f3, text='Enter CN:', bg="#F0F8FF", fg="#9F00FF").place(x=100, y=200)
     Entry(f3, bg= "#F1F0EE", font=('Cambria', 12), 
-          textvariable=contact).place(x=320, y=200, width=120)
+          textvariable=contact).place(x=320, y=200, width=250)
     
     def perform_registration():
         try:
