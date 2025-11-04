@@ -317,4 +317,4 @@ def create_register_screen(root):
     Button(f3, text='Home', font=('Cambria', 15),  bg="#9F00FF", fg="White",
            command=lambda: create_home_screen(root)).place(x=25, y=350, width=100, height=35)
     Button(f3, text='Login', font=('Cambria', 15),  bg="#9F00FF", fg="White",
-           command=lambda: create_login_screen(root)).place(x=480, y=350, width=120, height=35)
+           command=lambda: create_login_screen(root)).place(x=450, y=350, width=120, height=35)
