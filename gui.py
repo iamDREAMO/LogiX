@@ -128,7 +128,7 @@ def refresh_showall():
 # ==================== Search Tab ====================
 def create_search_tab(ntb):
     """Create the Search student tab"""
-    f6 = Frame(bg='LightBlue')
+    f6 = Frame(bg="#F0F8FF")
     ntb.add(f6, text='Search')
     
     roll_no = StringVar()
