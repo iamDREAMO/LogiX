@@ -280,8 +280,8 @@ def create_login_screen(root):
         else:
             messagebox.showerror('Login Failed', 'Invalid username or password')
     
-    Button(f2, text='Login', font=('Cambria', 15), fg="White", bg="#9F00FF", justify= CENTER,
-           command=perform_login).place(x=300, y=230, width=100, height=35, anchor= CENTER)
+    Button(f2, text='Login', font=('Cambria', 15), fg="White", bg="#9F00FF",
+           command=perform_login).place(x=300, y=230, width=100, height=40, anchor= CENTER)
     Button(f2, text='Home', font=('Cambria', 15), fg="White", bg="#9F00FF",
            command=lambda: create_home_screen(root)).place(x=25, y=350, width=100, height=40)
     Button(f2, text='Registration', font=('Cambria', 15), fg="White", bg="#9F00FF",
@@ -326,8 +326,8 @@ def create_register_screen(root):
             messagebox.showerror('Error', f'Failed to register: {str(e)}')
     
     Button(f3, text='Register', font=('Cambria', 15),  bg="#9F00FF", fg="White",
-           command=perform_registration).place(x=250, y=250, width=120, height=35)
+           command=perform_registration).place(x=250, y=250, width=120, height=40)
     Button(f3, text='Home', font=('Cambria', 15),  bg="#9F00FF", fg="White",
-           command=lambda: create_home_screen(root)).place(x=25, y=350, width=100, height=35)
+           command=lambda: create_home_screen(root)).place(x=25, y=350, width=100, height=40)
     Button(f3, text='Login', font=('Cambria', 15),  bg="#9F00FF", fg="White",
-           command=lambda: create_login_screen(root)).place(x=450, y=350, width=120, height=35)
+           command=lambda: create_login_screen(root)).place(x=450, y=350, width=120, height=40)
