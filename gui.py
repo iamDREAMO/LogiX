@@ -85,8 +85,8 @@ def create_insert_tab(ntb):
         except Exception as e:
             messagebox.showerror('Error', f'Failed to insert data: {str(e)}')
     
-    Button(f4, font=('Cambria', 15), text='Insert Data', fg='White', bg="#9F00FF", 
-           command=insert_data).place(x=250, y=300, width=150, height=35)
+    Button(f4, font=('Cambria', 15), text='Insert Data', fg='White', bg="#9F00FF",
+           command=insert_data).place(x=300, y=300, width=150, height=35, anchor= CENTER)
 
 # ==================== ShowAll Tab ====================
 def create_showall_tab(ntb):
