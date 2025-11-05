@@ -107,7 +107,7 @@ def display_all_students(frame):
     # Headers
     headers = ['Roll No.', 'Name', 'Phys.', 'Chem.', 'Maths']
     for i, text in enumerate(headers):
-        Label(frame, font=('Cambria', 12, 'bold'), text=text, bg="#9F00FF", 
+        Label(frame, font=('Cambria', 12, 'bold'), text=text, bg="#9F00FF", justify=CENTER,
               fg="#F0F8FF").place(x=i * 120, y=0, width=120)
     
     # Fetch and display data
@@ -115,8 +115,8 @@ def display_all_students(frame):
     y = 50
     for row in rows:
         for i, val in enumerate(row):
-            Label(frame, text=val, font=('Cambria', 13, 'bold'), bg="#F0F8FF", 
-                  fg="#9F00FF").place(x=i * 120, y=y)
+            Label(frame, text=val, font=('Cambria', 13, 'bold'), bg="#F0F8FF",
+                  fg="#9F00FF").place(x=i * 135, y=y)
         y += 30
 
 def refresh_showall():
@@ -189,10 +189,10 @@ def create_update_tab(ntb):
         chem = StringVar(value=record[3])
         maths = StringVar(value=record[4])
         
-        fields = [('Name', name), ('Phy', phy), ('Chem', chem), ('Maths', maths)]
+        fields = [('Name', name), ('Phys', phy), ('Chem', chem), ('Maths', maths)]
         
         for i, (label, var) in enumerate(fields):
-            Label(f7, text=f'{label}:', font=('Cambria', 15), bg='LightBlue', 
+            Label(f7, text=f'{label}:', font=('Cambria', 13, 'bold'), bg='LightBlue', 
                   fg='Red').place(x=200, y=100 + 50 * i)
             Entry(f7, font=('Cambria', 15), textvariable=var).place(x=350, y=100 + 50 * i)
         
