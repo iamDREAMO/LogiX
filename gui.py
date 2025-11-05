@@ -149,8 +149,9 @@ def create_search_tab(ntb):
         if result:
             labels = ['Name', 'Phy', 'Chem', 'Maths']
             for i, text in enumerate(labels):
-                Label(f6, text=f"{text}: {result[i+1]}", font=('Cambria', 12), 
-                      bg="#F0F8FF", fg="#9F00FF").place(x=200, y=100 + 50 * i)
+                Label(f6, text=f"{text}: {result[i+1]}", 
+                      font=('Cambria', 12), bg="#F0F8FF", 
+                      fg="#9F00FF").place(x=300, y=100 + 50 * i, anchor= CENTER)
         else:
             messagebox.showinfo('Not Found', 'Roll No. not found')
     
