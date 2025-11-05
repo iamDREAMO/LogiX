@@ -43,20 +43,20 @@ def create_insert_tab(ntb):
     maths = StringVar()
     
     # Labels and Entries
-    Label(f4, font=('Cambria', 15), text='Enter Roll No.', bg='LightBlue', fg='Red').place(x=150, y=50)
-    Entry(f4, font=('Cambria', 15), textvariable=roll_no).place(x=300, y=50, width=100)
+    Label(f4, font=('Cambria', 12), text='Enter Roll No.', bg='LightBlue', fg='Red').place(x=150, y=50)
+    Entry(f4, font=('Cambria', 12), textvariable=roll_no).place(x=300, y=50, width=100)
     
-    Label(f4, font=('Cambria', 15), text='Enter Name', bg='LightBlue', fg='Red').place(x=150, y=100)
-    Entry(f4, font=('Cambria', 15), textvariable=name).place(x=300, y=100, width=100)
+    Label(f4, font=('Cambria', 12), text='Enter Name', bg='LightBlue', fg='Red').place(x=150, y=100)
+    Entry(f4, font=('Cambria', 12), textvariable=name).place(x=300, y=100, width=100)
     
-    Label(f4, font=('Cambria', 15), text='Enter Phy.', bg='LightBlue', fg='Red').place(x=150, y=150)
-    Entry(f4, font=('Cambria', 15), textvariable=phy).place(x=300, y=150, width=100)
+    Label(f4, font=('Cambria', 12), text='Enter Phy.', bg='LightBlue', fg='Red').place(x=150, y=150)
+    Entry(f4, font=('Cambria', 12), textvariable=phy).place(x=300, y=150, width=100)
     
-    Label(f4, font=('Cambria', 15), text='Enter Chem.', bg='LightBlue', fg='Red').place(x=150, y=200)
-    Entry(f4, font=('Cambria', 15), textvariable=chem).place(x=300, y=200, width=100)
+    Label(f4, font=('Cambria', 12), text='Enter Chem.', bg='LightBlue', fg='Red').place(x=150, y=200)
+    Entry(f4, font=('Cambria', 12), textvariable=chem).place(x=300, y=200, width=100)
     
-    Label(f4, font=('Cambria', 15), text='Enter Maths.', bg='LightBlue', fg='Red').place(x=150, y=250)
-    Entry(f4, font=('Cambria', 15), textvariable=maths).place(x=300, y=250, width=100)
+    Label(f4, font=('Cambria', 12), text='Enter Maths.', bg='LightBlue', fg='Red').place(x=150, y=250)
+    Entry(f4, font=('Cambria', 12), textvariable=maths).place(x=300, y=250, width=100)
     
     def insert_data():
         try:
