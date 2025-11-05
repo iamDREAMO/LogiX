@@ -115,7 +115,7 @@ def display_all_students(frame):
     y = 50
     for row in rows:
         for i, val in enumerate(row):
-            Label(frame, text=val, font=('Cambria', 12), bg="#F0F8FF", 
+            Label(frame, text=val, font=('Cambria', 13, 'bold'), bg="#F0F8FF", 
                   fg="#9F00FF").place(x=i * 120, y=y)
         y += 30
 
