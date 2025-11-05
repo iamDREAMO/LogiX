@@ -32,7 +32,7 @@ def create_main_screen(root):
 # ==================== Insert Tab ====================
 def create_insert_tab(ntb):
     """Create the Insert student data tab"""
-    f4 = Frame(bg='LightBlue')
+    f4 = Frame(bg= "#F0F8FF" )
     ntb.add(f4, text='Insert')
     
     # Input variables
