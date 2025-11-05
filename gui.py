@@ -134,9 +134,9 @@ def create_search_tab(ntb):
     roll_no = StringVar()
     
     Label(f6, font=('Cambria', 12), text='Roll No.', bg="#F0F8FF", 
-          fg="#9F00FF").place(x=100, y=50, width=120)
+          fg="#9F00FF").place(x=120, y=50, width=120)
     Entry(f6, font=('Cambria', 12), bg="#F1F0EE",
-          textvariable=roll_no).place(x=230, y=50, width=100)
+          textvariable=roll_no).place(x=230, y=50, width=100, height=35)
     
     def search_student():
         # Clear previous results
@@ -154,8 +154,8 @@ def create_search_tab(ntb):
         else:
             messagebox.showinfo('Not Found', 'Roll No. not found')
     
-    Button(f6, text='Search', font=('Cambria', 15), 
-           command=search_student).place(x=350, y=50, width=100, height=30)
+    Button(f6, text='Search', font=('Cambria', 15), fg="#F0F8FF", 
+          bg="#9F00FF", command=search_student).place(x=350, y=50, width=100, height=40)
 
 # ==================== Update Tab ====================
 def create_update_tab(ntb):
