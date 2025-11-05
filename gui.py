@@ -165,9 +165,10 @@ def create_update_tab(ntb):
     
     roll_no = StringVar()
     
-    Label(f7, font=('Cambria', 12), text='Enter Roll No.', bg='LightBlue', 
-          fg='Red').place(x=100, y=50, width=120)
-    Entry(f7, font=('Cambria', 15), textvariable=roll_no).place(x=230, y=50, width=100)
+    Label(f7, font=('Cambria', 12), text='Enter Roll No.', bg="#F0F8FF", 
+          fg="#9F00FF").place(x=120, y=60, width=120)
+    Entry(f7, font=('Cambria', 12), bg="#F1F0EE",
+          textvariable=roll_no).place(x=250, y=55, width=100, height=30)
     
     def retrieve_student():
         # Clear previous fields
