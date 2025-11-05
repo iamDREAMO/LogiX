@@ -107,8 +107,8 @@ def display_all_students(frame):
     # Headers
     headers = ['Roll No.', 'Name', 'Phys.', 'Chem.', 'Maths']
     for i, text in enumerate(headers):
-        Label(frame, font=('Arial', 12, 'bold'), text=text, bg='LightBlue', 
-              fg='Red').place(x=i * 120, y=0, width=120)
+        Label(frame, font=('Arial', 12, 'bold'), text=text, bg="#F0F8FF", 
+              fg="#9F00FF").place(x=i * 120, y=0, width=120)
     
     # Fetch and display data
     rows = db.get_all_students()
