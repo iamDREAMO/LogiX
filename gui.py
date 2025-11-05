@@ -92,7 +92,7 @@ def create_insert_tab(ntb):
 def create_showall_tab(ntb):
     """Create the ShowAll students tab"""
     global frame_showall
-    f5 = Frame(bg='LightBlue')
+    f5 = Frame(bg="#F0F8FF")
     ntb.add(f5, text='ShowAll')
     frame_showall = f5
     
