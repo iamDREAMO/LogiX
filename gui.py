@@ -135,7 +135,8 @@ def create_search_tab(ntb):
     
     Label(f6, font=('Cambria', 12), text='Roll No.', bg="#F0F8FF", 
           fg="#9F00FF").place(x=100, y=50, width=120)
-    Entry(f6, font=('Cambria', 12), textvariable=roll_no).place(x=230, y=50, width=100)
+    Entry(f6, font=('Cambria', 12), bg="#F1F0EE",
+          textvariable=roll_no).place(x=230, y=50, width=100)
     
     def search_student():
         # Clear previous results
