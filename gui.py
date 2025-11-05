@@ -160,7 +160,7 @@ def create_search_tab(ntb):
 # ==================== Update Tab ====================
 def create_update_tab(ntb):
     """Create the Update student tab"""
-    f7 = Frame(bg='LightBlue')
+    f7 = Frame(bg="#F0F8FF")
     ntb.add(f7, text='Update')
     
     roll_no = StringVar()
