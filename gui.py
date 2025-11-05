@@ -107,7 +107,7 @@ def display_all_students(frame):
     # Headers
     headers = ['Roll No.', 'Name', 'Phys.', 'Chem.', 'Maths']
     for i, text in enumerate(headers):
-        Label(frame, font=('Arial', 12, 'bold'), text=text, bg="#F0F8FF", 
+        Label(frame, font=('Cambria', 12, 'bold'), text=text, bg="#F0F8FF", 
               fg="#9F00FF").place(x=i * 120, y=0, width=120)
     
     # Fetch and display data
@@ -115,7 +115,7 @@ def display_all_students(frame):
     y = 50
     for row in rows:
         for i, val in enumerate(row):
-            Label(frame, text=val, font=('Arial', 12), bg='LightBlue', 
+            Label(frame, text=val, font=('Cambria', 12), bg='LightBlue', 
                   fg='Red').place(x=i * 120, y=y)
         y += 30
 
@@ -133,7 +133,7 @@ def create_search_tab(ntb):
     
     roll_no = StringVar()
     
-    Label(f6, font=('Arial', 12), text='Roll No.', bg='LightBlue', 
+    Label(f6, font=('Cambria', 12), text='Roll No.', bg='LightBlue', 
           fg='Red').place(x=100, y=50, width=120)
     Entry(f6, font=('Cambria', 15), textvariable=roll_no).place(x=230, y=50, width=100)
     
@@ -164,7 +164,7 @@ def create_update_tab(ntb):
     
     roll_no = StringVar()
     
-    Label(f7, font=('Arial', 12), text='Roll No.', bg='LightBlue', 
+    Label(f7, font=('Cambria', 12), text='Roll No.', bg='LightBlue', 
           fg='Red').place(x=100, y=50, width=120)
     Entry(f7, font=('Cambria', 15), textvariable=roll_no).place(x=230, y=50, width=100)
     
@@ -215,7 +215,7 @@ def create_delete_tab(ntb):
     
     roll_no = StringVar()
     
-    Label(f8, font=('Arial', 12), text='Roll No.', bg='LightBlue', 
+    Label(f8, font=('Cambria', 12), text='Roll No.', bg='LightBlue', 
           fg='Red').place(x=100, y=50, width=120)
     Entry(f8, font=('Cambria', 15), textvariable=roll_no).place(x=230, y=50, width=100)
     
