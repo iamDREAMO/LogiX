@@ -207,8 +207,8 @@ def create_update_tab(ntb):
         Button(f7, text='Update', font=('Cambria', 15), 
                command=update_data).place(x=250, y=325, width=120, height=30)
     
-    Button(f7, text='Retrieve', font=('Cambria', 15), 
-           command=retrieve_student).place(x=350, y=50, width=100, height=30)
+    Button(f7, text='Retrieve', font=('Cambria', 15), fg="#F0F8FF", bg="#9F00FF",
+           command=retrieve_student).place(x=360, y=55, width=100, height=30)
 
 # ==================== Delete Tab ====================
 def create_delete_tab(ntb):
