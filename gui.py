@@ -105,7 +105,7 @@ def display_all_students(frame):
         widget.destroy()
     
     # Headers
-    headers = ['Roll No.', 'Name', 'Phy.', 'Chem.', 'Maths']
+    headers = ['Roll No.', 'Name', 'Phys.', 'Chem.', 'Maths']
     for i, text in enumerate(headers):
         Label(frame, font=('Arial', 12, 'bold'), text=text, bg='LightBlue', 
               fg='Red').place(x=i * 120, y=0, width=120)
