@@ -45,23 +45,28 @@ def create_insert_tab(ntb):
     # Labels and Entries
     Label(f4, font=('Cambria', 12), text='Enter Roll No.', 
           bg="#F0F8FF", fg="#9F00FF").place(x=120, y=50)
-    Entry(f4, font=('Cambria', 12), textvariable=roll_no).place(x=270, y=50, width=200)
+    Entry(f4, bg= "#F1F0EE",font=('Cambria', 12), 
+          textvariable=roll_no).place(x=270, y=50, width=200)
     
     Label(f4, font=('Cambria', 12), text='Enter Name', 
           bg="#F0F8FF", fg="#9F00FF").place(x=120, y=100)
-    Entry(f4, font=('Cambria', 12), textvariable=name).place(x=270, y=100, width=200)
+    Entry(f4, bg= "#F1F0EE",font=('Cambria', 12), 
+          textvariable=name).place(x=270, y=100, width=200)
     
     Label(f4, font=('Cambria', 12), text='Enter Phys.', 
           bg="#F0F8FF", fg="#9F00FF").place(x=120, y=150)
-    Entry(f4, font=('Cambria', 12), textvariable=phy).place(x=270, y=150, width=200)
+    Entry(f4, bg= "#F1F0EE",font=('Cambria', 12), 
+          textvariable=phy).place(x=270, y=150, width=200)
     
     Label(f4, font=('Cambria', 12), text='Enter Chem.', 
           bg="#F0F8FF", fg="#9F00FF").place(x=120, y=200)
-    Entry(f4, font=('Cambria', 12), textvariable=chem).place(x=270, y=200, width=200)
+    Entry(f4, bg= "#F1F0EE",font=('Cambria', 12), 
+          textvariable=chem).place(x=270, y=200, width=200)
     
     Label(f4, font=('Cambria', 12), text='Enter Maths.', 
           bg="#F0F8FF", fg="#9F00FF").place(x=120, y=250)
-    Entry(f4, font=('Cambria', 12), textvariable=maths).place(x=270, y=250, width=200)
+    Entry(f4, bg= "#F1F0EE", font=('Cambria', 12), 
+          textvariable=maths).place(x=270, y=250, width=200)
     
     def insert_data():
         try:
