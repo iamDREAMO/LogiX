@@ -192,8 +192,8 @@ def create_update_tab(ntb):
         fields = [('Name', name), ('Phys', phy), ('Chem', chem), ('Maths', maths)]
         
         for i, (label, var) in enumerate(fields):
-            Label(f7, text=f'{label}:', font=('Cambria', 13, 'bold'), bg='LightBlue', 
-                  fg='Red').place(x=200, y=100 + 50 * i)
+            Label(f7, text=f'{label}:', font=('Cambria', 13, 'bold'), bg="#F0F8FF", 
+                  fg="#9F00FF").place(x=200, y=100 + 50 * i)
             Entry(f7, font=('Cambria', 15), textvariable=var).place(x=350, y=100 + 50 * i)
         
         def update_data():
