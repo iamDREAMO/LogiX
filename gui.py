@@ -239,7 +239,7 @@ def create_delete_tab(ntb):
 # ==================== Logout Tab ====================
 def create_logout_tab(ntb):
     """Create the Logout tab"""
-    f9 = Frame(bg='LightBlue')
+    f9 = Frame(bg="#F0F8FF")
     ntb.add(f9, text='LogOut')
 
 # ==================== Home Screen ====================
