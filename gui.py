@@ -219,7 +219,7 @@ def create_delete_tab(ntb):
     
     roll_no = StringVar()
     
-    Label(f8, font=('Cambria', 12), text='Roll No.', bg='LightBlue', 
+    Label(f8, font=('Cambria', 12), text='Enter Roll No.', bg='LightBlue', 
           fg='Red').place(x=100, y=50, width=120)
     Entry(f8, font=('Cambria', 15), textvariable=roll_no).place(x=230, y=50, width=100)
     
