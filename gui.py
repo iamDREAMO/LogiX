@@ -220,7 +220,7 @@ def create_delete_tab(ntb):
     roll_no = StringVar()
     
     Label(f8, font=('Cambria', 12), text='Enter Roll No.', bg="#F0F8FF", 
-          fg="#9F00FF").place(x=100, y=60, width=120)
+          fg="#9F00FF").place(x=120, y=60, width=120)
     Entry(f8, font=('Cambria', 15), bg="#F1F0EE",
           textvariable=roll_no).place(x=230, y=55, width=100, height= 30)
     
@@ -234,7 +234,7 @@ def create_delete_tab(ntb):
             messagebox.showerror('Error', f'Failed to delete data: {str(e)}')
     
     Button(f8, text='Delete', font=('Cambria', 15), fg="#F0F8FF", bg="#9F00FF",
-           command=delete_student).place(x=350, y=55, width=100, height=30)
+           command=delete_student).place(x=360, y=55, width=100, height=30)
 
 # ==================== Logout Tab ====================
 def create_logout_tab(ntb):
