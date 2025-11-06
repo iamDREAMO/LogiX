@@ -221,7 +221,8 @@ def create_delete_tab(ntb):
     
     Label(f8, font=('Cambria', 12), text='Enter Roll No.', bg="#F0F8FF", 
           fg="#9F00FF").place(x=100, y=60, width=120)
-    Entry(f8, font=('Cambria', 15), textvariable=roll_no).place(x=230, y=50, width=100)
+    Entry(f8, font=('Cambria', 15), bg="#F1F0EE",
+          textvariable=roll_no).place(x=230, y=50, width=100)
     
     def delete_student():
         try:
