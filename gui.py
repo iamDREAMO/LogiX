@@ -206,7 +206,7 @@ def create_update_tab(ntb):
                 messagebox.showerror('Error', f'Failed to update data: {str(e)}')
         
         Button(f7, text='Update', font=('Cambria', 15), fg="#F0F8FF", bg="#9F00FF",
-               command=update_data).place(x=250, y=325, width=110, height=40)
+               command=update_data).place(x=250, y=320, width=110, height=40)
     
     Button(f7, text='Retrieve', font=('Cambria', 15), fg="#F0F8FF", bg="#9F00FF",
            command=retrieve_student).place(x=360, y=55, width=110, height=30)
