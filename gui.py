@@ -214,7 +214,7 @@ def create_update_tab(ntb):
 # ==================== Delete Tab ====================
 def create_delete_tab(ntb):
     """Create the Delete student tab"""
-    f8 = Frame(bg='LightBlue')
+    f8 = Frame(bg="#F0F8FF")
     ntb.add(f8, text='Delete')
     
     roll_no = StringVar()
