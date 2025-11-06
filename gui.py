@@ -233,7 +233,7 @@ def create_delete_tab(ntb):
         except Exception as e:
             messagebox.showerror('Error', f'Failed to delete data: {str(e)}')
     
-    Button(f8, text='Delete', font=('Cambria', 15), 
+    Button(f8, text='Delete', font=('Cambria', 15), fg="#F0F8FF", 
            command=delete_student).place(x=350, y=50, width=100, height=30)
 
 # ==================== Logout Tab ====================
