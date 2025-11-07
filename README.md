@@ -118,6 +118,7 @@ LogiX/
 ### Managing Student Records
 
 #### Adding a Student
+![Add student](Images/insert.png)
 
 1. Navigate to the **Insert** tab
 2. Fill in the required fields:
