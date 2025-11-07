@@ -145,6 +145,7 @@ LogiX/
 4. Student details will be displayed if found
 
 #### Updating Student Information
+![update](Images/update.png)
 
 1. Navigate to the **Update** tab
 2. Enter the roll number of the student to update
