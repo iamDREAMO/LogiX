@@ -154,6 +154,7 @@ LogiX/
 5. Click "Update" to save changes
 
 #### Deleting a Student Record
+![delete](Images/delete.png)
 
 1. Navigate to the **Delete** tab
 2. Enter the roll number of the student to delete
