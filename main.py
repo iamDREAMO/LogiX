@@ -3,7 +3,8 @@ LogiX Student Management System
 Entry point of the application
 """
 from tkinter import Tk
-from gui import create_home_screen
+from src.gui import create_home_screen
+
 
 def main():
     root = Tk()

@@ -4,7 +4,7 @@ Contains all Tkinter GUI components
 """
 from tkinter import *
 from tkinter import messagebox, ttk
-import database as db
+import src.database as db
 
 # Global reference to the ShowAll frame for refreshing
 frame_showall = None
