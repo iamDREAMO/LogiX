@@ -43,11 +43,12 @@ LogiX is a desktop application designed for student record management. Built wit
 - **Operating System**: Windows, Linux, or macOS
 - **Display**: Minimum resolution of 800x600 pixels
 
-**Note**:LogiX utilizes only Python's standard library modules:
+**Note**: LogiX utilizes only Python's standard library modules:
 
 - `tkinter` - GUI framework (pre-installed with most Python distributions)
 - `sqlite3` - Database management (included in Python standard library)
- _No external package installations are required._
+
+_No external package installations are required._
 
 ## Installation
 
