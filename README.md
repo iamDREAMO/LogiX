@@ -104,6 +104,8 @@ LogiX/
    python main.py
    ```
 
+![Home screen](Images/home.png)
+
 2. **Register a New Account**
    - Click "Register" on the home screen
    - Enter username, password, and contact number
