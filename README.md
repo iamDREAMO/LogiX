@@ -46,7 +46,7 @@ LogiX utilizes only Python's standard library modules:
 - `tkinter` - GUI framework (pre-installed with most Python distributions)
 - `sqlite3` - Database management (included in Python standard library)
 
-Note:_No external package installations are required._
+Note: _No external package installations are required._
 
 ## Installation
 
