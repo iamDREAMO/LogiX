@@ -28,7 +28,7 @@ LogiX is a desktop application designed for student record management. Built wit
   - **Search**: Query student records by roll number with instant results
 
 - **Academic Performance Tracking**
- - Academic performance tracking with subject-wise scores and real-time data synchronization
+  - Academic performance tracking with subject-wise scores and real-time data synchronization
 
 
 ## System Requirements
