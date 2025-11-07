@@ -1,0 +1,6 @@
+demo.db
+.venv
+__pycache__
+.python-version
+uv.lock
+requirements.txt
