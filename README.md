@@ -46,7 +46,7 @@ LogiX is a desktop application designed for student record management. Built wit
 - `sqlite3` - Database management (included in Python standard library)
 
 **Note**: LogiX utilizes only Python's standard library modules.
-_No external package installations are required._
+ _No external package installations are required._
 
 ## Installation
 
