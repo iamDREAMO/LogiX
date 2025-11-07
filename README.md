@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)](https://github.com)
 
-![LogiX Demo](Images/hero-app.gif)
+![hero](Images/hero.gif)
 
 *A desktop application for student record management*
 
@@ -103,8 +103,7 @@ LogiX/
    ```bash
    python main.py
    ```
-
-![Home screen](Images/home.png)
+![home](Images/home.png)
 
 2. **Register a New Account**
    - Click "Register" on the home screen
@@ -118,7 +117,7 @@ LogiX/
 ### Managing Student Records
 
 #### Adding a Student
-![Add student](Images/insert.png)
+![insert](Images/insert.png)
 
 1. Navigate to the **Insert** tab
 2. Fill in the required fields:
@@ -131,13 +130,14 @@ LogiX/
 4. Confirmation message will appear upon successful insertion
 
 #### Viewing All Records
-![dashboard display](Images/dashboard.png)
+![dashboard](Images/dashboard.png)
 
 - Navigate to the **ShowAll** tab
 - All student records are displayed in a tabular format
 - Data automatically refreshes after any modification
 
 #### Searching for a Student
+![search](Images/search.png)
 
 1. Navigate to the **Search** tab
 2. Enter the student's roll number
