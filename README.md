@@ -17,7 +17,7 @@ LogiX is a desktop application designed for student record management. Built wit
 ### Core Functionality
 
 - **User Authentication System**
- - User authentication system with secure registration, login, and session management
+  - User authentication system with secure registration, login, and session management
   
 
 - **Student Record Management**
