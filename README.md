@@ -6,6 +6,10 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)](https://github.com)
 
+![LogiX Demo](Images/hero-app.gif)
+
+*A desktop application for student record management*
+
 </div>
 
 ## Overview
