@@ -131,6 +131,7 @@ LogiX/
 4. Confirmation message will appear upon successful insertion
 
 #### Viewing All Records
+![dashboard display](Images/dashboard.png)
 
 - Navigate to the **ShowAll** tab
 - All student records are displayed in a tabular format
