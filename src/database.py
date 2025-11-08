@@ -14,21 +14,20 @@ def create_tables():
     
     # Students table
     cur.execute("""
-        CREATE TABLE IF NOT EXISTS ins (
-            URNO TEXT PRIMARY KEY,
-            UNAME TEXT,
-            UPHY TEXT,
-            UCHE TEXT,
-            UMATHS TEXT
+        CREATE TABLE IF NOT EXISTS insert (
+            ROLL NO. TEXT PRIMARY KEY,
+            NAME TEXT,
+            PHYS. TEXT,
+            CHEM. TEXT,
+            MATHS TEXT
         )
     """)
     
     # Users/Registration table
     cur.execute("""
-        CREATE TABLE IF NOT EXISTS regis (
-            UNAME TEXT,
-            UPASS TEXT,
-            CN TEXT
+        CREATE TABLE IF NOT EXISTS register (
+            NAME TEXT,
+            PASSWORD TEXT
         )
     """)
     
@@ -36,14 +35,14 @@ def create_tables():
     conn.close()
 
 # ==================== Student Operations ====================
-def insert_student(roll_no, name, phy, chem, maths):
+def insert_student(roll_no, name, phys, chem, maths):
     """Insert a new student record"""
     conn = sqlite3.connect(DB_NAME)
     cur = conn.cursor()
     
     create_tables()
     cur.execute("INSERT INTO ins VALUES (?, ?, ?, ?, ?)", 
-                (roll_no, name, phy, chem, maths))
+                (roll_no, name, phys, chem, maths))
     
     conn.commit()
     conn.close()
@@ -55,7 +54,7 @@ def get_all_students():
     cur = conn.cursor()
     
     create_tables()
-    cur.execute("SELECT * FROM ins")
+    cur.execute("SELECT * FROM insert")
     rows = cur.fetchall()
     
     conn.close()
@@ -66,20 +65,20 @@ def search_student(roll_no):
     conn = sqlite3.connect(DB_NAME)
     cur = conn.cursor()
     
-    cur.execute("SELECT * FROM ins WHERE URNO=?", (roll_no,))
+    cur.execute("SELECT * FROM insert WHERE ROLL NO.=?", (roll_no,))
     result = cur.fetchone()
     
     conn.close()
     return result
 
-def update_student(roll_no, name, phy, chem, maths):
+def update_student(roll_no, name, phys, chem, maths):
     """Update student information"""
     conn = sqlite3.connect(DB_NAME)
     cur = conn.cursor()
     
     cur.execute("""
-        UPDATE ins SET UNAME=?, UPHY=?, UCHE=?, UMATHS=? WHERE URNO=?
-    """, (name, phy, chem, maths, roll_no))
+        UPDATE insert SET NAME=?, PHYS.=?, CHEM.=?, MATHS=? WHERE ROLL NO.=?
+    """, (name, phys, chem, maths, roll_no))
     
     conn.commit()
     conn.close()
@@ -90,20 +89,20 @@ def delete_student(roll_no):
     conn = sqlite3.connect(DB_NAME)
     cur = conn.cursor()
     
-    cur.execute("DELETE FROM ins WHERE URNO=?", (roll_no,))
+    cur.execute("DELETE FROM insert WHERE ROLL NO.=?", (roll_no,))
     
     conn.commit()
     conn.close()
     return True
 
 # ==================== User Authentication ====================
-def register_user(username, password, contact):
+def register_user(username, password):
     """Register a new user"""
     conn = sqlite3.connect(DB_NAME)
     cur = conn.cursor()
     
     create_tables()
-    cur.execute("INSERT INTO regis VALUES (?, ?, ?)", (username, password, contact))
+    cur.execute("INSERT INTO register VALUES (?, ?)", (username, password))
     
     conn.commit()
     conn.close()
@@ -115,7 +114,7 @@ def validate_login(username, password):
     cur = conn.cursor()
     
     create_tables()
-    cur.execute("SELECT * FROM regis WHERE UNAME=? AND UPASS=?", (username, password))
+    cur.execute("SELECT * FROM register WHERE NAME=? AND PASSWORD=?", (username, password))
     result = cur.fetchone()
     
     conn.close()
