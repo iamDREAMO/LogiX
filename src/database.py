@@ -14,20 +14,20 @@ def create_tables():
     
     # Students table
     cur.execute("""
-        CREATE TABLE IF NOT EXISTS insert (
-            ROLL NO. TEXT PRIMARY KEY,
-            NAME TEXT,
-            PHYS. TEXT,
-            CHEM. TEXT,
-            MATHS TEXT
+        CREATE TABLE IF NOT EXISTS students (
+            roll_no TEXT PRIMARY KEY,
+            name TEXT,
+            phys TEXT,
+            chem TEXT,
+            maths TEXT
         )
     """)
     
     # Users/Registration table
     cur.execute("""
-        CREATE TABLE IF NOT EXISTS register (
-            NAME TEXT,
-            PASSWORD TEXT
+        CREATE TABLE IF NOT EXISTS users (
+            username TEXT,
+            password TEXT
         )
     """)
     
@@ -41,7 +41,7 @@ def insert_student(roll_no, name, phys, chem, maths):
     cur = conn.cursor()
     
     create_tables()
-    cur.execute("INSERT INTO ins VALUES (?, ?, ?, ?, ?)", 
+    cur.execute("INSERT INTO students VALUES (?, ?, ?, ?, ?)", 
                 (roll_no, name, phys, chem, maths))
     
     conn.commit()
@@ -54,7 +54,7 @@ def get_all_students():
     cur = conn.cursor()
     
     create_tables()
-    cur.execute("SELECT * FROM insert")
+    cur.execute("SELECT * FROM students")
     rows = cur.fetchall()
     
     conn.close()
@@ -65,7 +65,7 @@ def search_student(roll_no):
     conn = sqlite3.connect(DB_NAME)
     cur = conn.cursor()
     
-    cur.execute("SELECT * FROM insert WHERE ROLL NO.=?", (roll_no,))
+    cur.execute("SELECT * FROM students WHERE roll_no=?", (roll_no,))
     result = cur.fetchone()
     
     conn.close()
@@ -77,7 +77,7 @@ def update_student(roll_no, name, phys, chem, maths):
     cur = conn.cursor()
     
     cur.execute("""
-        UPDATE insert SET NAME=?, PHYS.=?, CHEM.=?, MATHS=? WHERE ROLL NO.=?
+        UPDATE students SET name=?, phys=?, chem=?, maths=? WHERE roll_no=?
     """, (name, phys, chem, maths, roll_no))
     
     conn.commit()
@@ -89,7 +89,7 @@ def delete_student(roll_no):
     conn = sqlite3.connect(DB_NAME)
     cur = conn.cursor()
     
-    cur.execute("DELETE FROM insert WHERE ROLL NO.=?", (roll_no,))
+    cur.execute("DELETE FROM students WHERE roll_no=?", (roll_no,))
     
     conn.commit()
     conn.close()
@@ -102,7 +102,7 @@ def register_user(username, password):
     cur = conn.cursor()
     
     create_tables()
-    cur.execute("INSERT INTO register VALUES (?, ?)", (username, password))
+    cur.execute("INSERT INTO users VALUES (?, ?)", (username, password))
     
     conn.commit()
     conn.close()
@@ -114,7 +114,7 @@ def validate_login(username, password):
     cur = conn.cursor()
     
     create_tables()
-    cur.execute("SELECT * FROM register WHERE NAME=? AND PASSWORD=?", (username, password))
+    cur.execute("SELECT * FROM users WHERE username=? AND password=?", (username, password))
     result = cur.fetchone()
     
     conn.close()

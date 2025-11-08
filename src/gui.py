@@ -38,7 +38,7 @@ def create_insert_tab(ntb):
     # Input variables
     roll_no = StringVar()
     name = StringVar()
-    phy = StringVar()
+    phys = StringVar()
     chem = StringVar()
     maths = StringVar()
     
@@ -56,7 +56,7 @@ def create_insert_tab(ntb):
     Label(f4, font=('Cambria', 12), text='Enter Phys.', 
           bg="#F0F8FF", fg="#9F00FF").place(x=120, y=150)
     Entry(f4, bg= "#F1F0EE",font=('Cambria', 12), 
-          textvariable=phy).place(x=270, y=150, width=200)
+          textvariable=phys).place(x=270, y=150, width=200)
     
     Label(f4, font=('Cambria', 12), text='Enter Chem.', 
           bg="#F0F8FF", fg="#9F00FF").place(x=120, y=200)
@@ -70,13 +70,13 @@ def create_insert_tab(ntb):
     
     def insert_data():
         try:
-            db.insert_student(roll_no.get(), name.get(), phy.get(), chem.get(), maths.get())
+            db.insert_student(roll_no.get(), name.get(), phys.get(), chem.get(), maths.get())
             messagebox.showinfo('Success', 'Data Inserted')
             
             # Clear fields
             roll_no.set('')
             name.set('')
-            phy.set('')
+            phys.set('')
             chem.set('')
             maths.set('')
             
@@ -147,7 +147,7 @@ def create_search_tab(ntb):
         result = db.search_student(roll_no.get())
         
         if result:
-            labels = ['Name', 'Phy', 'Chem', 'Maths']
+            labels = ['Name', 'Phys', 'Chem', 'Maths']
             for i, text in enumerate(labels):
                 Label(f6, text=f"{text}: {result[i+1]}", 
                       font=('Cambria', 13, 'bold'), bg="#F0F8FF", 
@@ -185,11 +185,11 @@ def create_update_tab(ntb):
         
         # Create input fields with existing data
         name = StringVar(value=record[1])
-        phy = StringVar(value=record[2])
+        phys = StringVar(value=record[2])
         chem = StringVar(value=record[3])
         maths = StringVar(value=record[4])
         
-        fields = [('Name', name), ('Phys', phy), ('Chem', chem), ('Maths', maths)]
+        fields = [('Name', name), ('Phys', phys), ('Chem', chem), ('Maths', maths)]
         
         for i, (label, var) in enumerate(fields):
             Label(f7, text=f'{label}:', font=('Cambria', 13, 'bold'), bg="#F0F8FF", 
@@ -199,7 +199,7 @@ def create_update_tab(ntb):
         
         def update_data():
             try:
-                db.update_student(roll_no.get(), name.get(), phy.get(), chem.get(), maths.get())
+                db.update_student(roll_no.get(), name.get(), phys.get(), chem.get(), maths.get())
                 messagebox.showinfo('Success', 'Data Updated')
                 refresh_showall()
             except Exception as e:
@@ -300,7 +300,6 @@ def create_register_screen(root):
     
     username = StringVar()
     password = StringVar()
-    contact = StringVar()
     
     Label(f3, text='Register', font=('Cambria', 25, 'bold'),justify = CENTER, 
         bg="#F0F8FF", fg= "#9F00FF").place(x=245, y=30)
@@ -315,18 +314,12 @@ def create_register_screen(root):
     Entry(f3, bg= "#F1F0EE", font=('Cambria', 12), 
           textvariable=password, show='*').place(x=250, y=150, width=250, height=35)
     
-    Label(f3, text='Enter Contact:', bg="#F0F8FF", font=('Cambria', 12),
-          fg="#9F00FF").place(x=100, y=200)
-    Entry(f3, bg= "#F1F0EE", font=('Cambria', 12), 
-          textvariable=contact).place(x=250, y=200, width=250, height=35)
-    
     def perform_registration():
         try:
-            db.register_user(username.get(), password.get(), contact.get())
+            db.register_user(username.get(), password.get())
             messagebox.showinfo('Success', 'User Registered')
             username.set('')
             password.set('')
-            contact.set('')
         except Exception as e:
             messagebox.showerror('Error', f'Failed to register: {str(e)}')
     
