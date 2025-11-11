@@ -167,19 +167,19 @@ LogiX/
 
 | Column | Type | Description | Constraints |
 |--------|------|-------------|-------------|
-| URNO | TEXT | Student roll number | PRIMARY KEY |
-| UNAME | TEXT | Student name | - |
-| UPHY | TEXT | Physics score | - |
-| UCHE | TEXT | Chemistry score | - |
-| UMATHS | TEXT | Mathematics score | - |
+| roll_no | TEXT | Student roll number | PRIMARY KEY |
+| name | TEXT | Student name | - |
+| phys| TEXT | Physics score | - |
+| chem| TEXT | Chemistry score | - |
+| maths | TEXT | Mathematics score | - |
 
 ### Users Table (`regis`)
 
 | Column | Type | Description | Constraints |
 |--------|------|-------------|-------------|
-| UNAME | TEXT | Username | - |
-| UPASS | TEXT | Password | - |
-| CN | TEXT | Contact Number | - |
+| username | TEXT | Username | - |
+| password | TEXT | Password | - |
+
 
 ## Troubleshooting
 
