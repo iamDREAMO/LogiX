@@ -163,7 +163,7 @@ LogiX/
 
 ## Database Schema
 
-### Students Table (`ins`)
+### Students Table (`students`)
 
 | Column | Type | Description | Constraints |
 |--------|------|-------------|-------------|
@@ -173,7 +173,7 @@ LogiX/
 | chem| TEXT | Chemistry score | - |
 | maths | TEXT | Mathematics score | - |
 
-### Users Table (`regis`)
+### Users Table (`users`)
 
 | Column | Type | Description | Constraints |
 |--------|------|-------------|-------------|
