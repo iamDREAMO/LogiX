@@ -1,7 +1,23 @@
 [project]
-name = "logix"
-version = "0.1.0"
-description = "Add your description here"
+name = "LogiX"
+version = "1.0.0"
+description = "A desktop application for student record management"
+authors = [
+    {name = "Benedict Kofi Amofah", email = "benedictkofiamofah@gmail.com"}
+]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["student", "records", "management", "database", "tkinter"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Education",
+    "Topic :: Database :: Front-Ends",
+]

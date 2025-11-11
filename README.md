@@ -82,12 +82,24 @@ python main.py
 
 ```
 LogiX/
-├── main.py              # Application entry point
-├── gui.py               # GUI components and screen layouts
-├── database.py          # Database operations and queries
-├── requirements.txt     # Project dependencies documentation
-├── README.md            # Project documentation
-└── demo.db             # SQLite database (auto-generated on first run)
+├── app_screenshots(png)/     # Application screenshots and demo GIFs
+│   ├── hero.gif             # Hero GIF showing app workflow
+│   ├── home.png             # Welcome/home screen
+│   ├── dashboard.png        # ShowAll tab with student records
+│   ├── insert.png           # Insert student form
+│   ├── search.png           # Search functionality
+│   ├── update.png           # Update student form
+│   └── delete.png           # Delete functionality
+│
+├── src/                      # Source code directory
+│   ├── gui.py               # GUI components and screen layouts
+│   └── database.py          # Database operations and queries
+│
+├── .gitignore               # Git ignore rules (Python, DB, IDE files)
+├── LICENSE                  # MIT License
+├── README.md                # Project documentation
+├── main.py                  # Application entry point
+└── pyproject.toml           # Project metadata and dependencies
 ```
 
 ## Usage Guide
