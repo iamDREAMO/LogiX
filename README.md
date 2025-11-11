@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)](https://github.com)
 
-![hero](Images/hero.gif)
+![hero](<app screenshots(png)/hero.gif>)
 
 *A desktop application for student record management*
 
@@ -110,7 +110,7 @@ LogiX/
    ```bash
    python main.py
    ```
-![home](Images/home.png)
+![home](<app screenshots(png)/home.png>)
 
 2. **Register a New Account**
    - Click "Register" on the home screen
@@ -124,7 +124,7 @@ LogiX/
 ### Managing Student Records
 
 #### Adding a Student
-![insert](Images/insert.png)
+![insert](<app screenshots(png)/insert.png>)
 
 1. Navigate to the **Insert** tab
 2. Fill in the required fields:
@@ -137,14 +137,14 @@ LogiX/
 4. Confirmation message will appear upon successful insertion
 
 #### Viewing All Records
-![dashboard](Images/dashboard.png)
+![dashboard](<app screenshots(png)/dashboard.png>)
 
 - Navigate to the **ShowAll** tab
 - All student records are displayed in a tabular format
 - Data automatically refreshes after any modification
 
 #### Searching for a Student
-![search](Images/search.png)
+![search](<app screenshots(png)/search.png>)
 
 1. Navigate to the **Search** tab
 2. Enter the student's roll number
@@ -152,7 +152,7 @@ LogiX/
 4. Student details will be displayed if found
 
 #### Updating Student Information
-![update](Images/update.png)
+![update](<app screenshots(png)/update.png>)
 
 1. Navigate to the **Update** tab
 2. Enter the roll number of the student to update
@@ -161,7 +161,7 @@ LogiX/
 5. Click "Update" to save changes
 
 #### Deleting a Student Record
-![delete](Images/delete.png)
+![delete](<app screenshots(png)/delete.png>)
 
 1. Navigate to the **Delete** tab
 2. Enter the roll number of the student to delete
