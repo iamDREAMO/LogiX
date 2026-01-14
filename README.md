@@ -264,6 +264,9 @@ For support, questions, or feedback:
   - User authentication system
   - Basic student record management
 
+- **v2.0.0** (2026-01-14)
+  - Standalone execuatable (.exe format)
+
 ---
 
 **Note**: This application is intended for educational and small-scale institutional use. For production deployment with sensitive data, additional security measures and thorough testing are recommended.
