@@ -21,3 +21,6 @@ classifiers = [
     "Topic :: Education",
     "Topic :: Database :: Front-Ends",
 ]
+dependencies = [
+    "pyinstaller>=6.18.0",
+]
