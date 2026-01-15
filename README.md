@@ -265,7 +265,7 @@ For support, questions, or feedback:
   - Basic student record management
 
 - **v2.0.0** (2026-01-14)
-  - Standalone execuatable (.exe format)
+  - Linux Standalone execuatable (.exe format)
 
 ---
 
