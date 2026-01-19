@@ -47,6 +47,11 @@ LogiX is a desktop application designed for student record management. Built wit
 
 **Note**: LogiX utilizes only Python's standard library modules. No external package installations are required.
 
+## Downloads
+
+Get the latest release here:
+https://github.com/iamDREAMO/LogiX/releases/tag/v1.0.0
+
 ## Installation
 
 ### Step 1: Clone the Repository
@@ -217,9 +222,6 @@ Contributions are welcome! Please follow these guidelines:
 
  - Follow PEP 8 style guidelines, include docstrings, comment complex logic, and write meaningful commit messages
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Developer/Support
 For support, questions, or feedback:
@@ -227,7 +229,7 @@ For support, questions, or feedback:
 - **Email**: benedictkofiamofah@gmail.com
 - **Issues**: [GitHub Issues](https://github.com/iamDREAMO/LogiX/issues)
 
-### Project Evolution
+## Project Evolution
 
 LogiX began as a Python-based CLI application before evolving into a full desktop GUI with cross-platform executables.
 
@@ -235,6 +237,9 @@ LogiX began as a Python-based CLI application before evolving into a full deskto
 - **v0.5.x** — Tkinter-based desktop GUI (2025-10-28)
 - **v1.0.0** — Linux and Windows executables (2026-01-14/2026-01-19)
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ---
 
-**Note**: This application is intended for educational and small-scale institutional use. For production deployment with sensitive data, additional security measures and thorough testing are recommended..
+**Note**: This application is intended for educational and small-scale institutional use. For production deployment with sensitive data, additional security measures and thorough testing are recommended.
