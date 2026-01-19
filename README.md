@@ -264,18 +264,6 @@ LogiX began as a Python-based CLI application before evolving into a full deskto
 - **v0.5.x** — Tkinter-based desktop GUI (2025-10-28)
 - **v1.0.0** — Standalone Linux and Windows executables (2026-01-14/2026-01-19)
 
-
-## Version History
-
-- **v1.0.0** (2025-10-28)
-  - Initial release
-  - Core CRUD functionality
-  - User authentication system
-  - Basic student record management
-
-- **v2.0.0** (2026-01-14)
-  - Linux Standalone execuatable (.exe format)
-
 ---
 
 **Note**: This application is intended for educational and small-scale institutional use. For production deployment with sensitive data, additional security measures and thorough testing are recommended..
