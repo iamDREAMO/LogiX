@@ -221,13 +221,9 @@ Contributions are welcome! Please follow these guidelines:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Developer
-
- - **Benedict Kofi Amofah** - [LinkedIn](https://www.linkedin.com/in/benedict-kofi-amofah) | [GitHub](https://github.com/iamDREAMO)
-## Support
-
+## Developer/Support
 For support, questions, or feedback:
-
+ - **Benedict Kofi Amofah** - [LinkedIn](https://www.linkedin.com/in/benedict-kofi-amofah) | [GitHub](https://github.com/iamDREAMO)
 - **Email**: benedictkofiamofah@gmail.com
 - **Issues**: [GitHub Issues](https://github.com/iamDREAMO/LogiX/issues)
 
