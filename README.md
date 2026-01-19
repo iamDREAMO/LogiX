@@ -256,6 +256,15 @@ For support, questions, or feedback:
 - **Email**: benedictkofiamofah@gmail.com
 - **Issues**: [GitHub Issues](https://github.com/iamDREAMO/LogiX/issues)
 
+### Project Evolution
+
+LogiX began as a Python-based CLI application before evolving into a full desktop GUI with cross-platform executables.
+
+- **v0.1.x** — Command-line interface (CLI) prototype (2025-10-27)
+- **v0.5.x** — Tkinter-based desktop GUI (2025-10-28)
+- **v1.0.0** — Standalone Linux and Windows executables (2026-01-14/2026-01-19)
+
+
 ## Version History
 
 - **v1.0.0** (2025-10-28)
