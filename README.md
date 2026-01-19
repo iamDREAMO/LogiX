@@ -192,31 +192,6 @@ LogiX/
 | username | TEXT | Username | - |
 | password | TEXT | Password | - |
 
-
-## Troubleshooting
-
-### Common Issues
-
-#### Tkinter Not Found
-
-**Error**: `ModuleNotFoundError: No module named 'tkinter'`
-
-**Solution**:
-
-- **Ubuntu/Debian**:
-  ```bash
-  sudo apt-get install python3-tk
-  ```
-
-- **Fedora**:
-  ```bash
-  sudo dnf install python3-tkinter
-  ```
-
-- **macOS**: Tkinter comes pre-installed with Python from python.org
-
-- **Windows**: Reinstall Python and ensure "tcl/tk and IDLE" is selected
-
 ## Future Enhancements (Open to Contributors!)
 
 - [ ] Advanced search filters (by name, score range)
@@ -262,7 +237,7 @@ LogiX began as a Python-based CLI application before evolving into a full deskto
 
 - **v0.1.x** — Command-line interface (CLI) prototype (2025-10-27)
 - **v0.5.x** — Tkinter-based desktop GUI (2025-10-28)
-- **v1.0.0** — Standalone Linux and Windows executables (2026-01-14/2026-01-19)
+- **v1.0.0** — Linux and Windows executables (2026-01-14/2026-01-19)
 
 ---
 
