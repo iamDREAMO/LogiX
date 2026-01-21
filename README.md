@@ -240,6 +240,7 @@ LogiX began as a Python-based CLI application before evolving into a full deskto
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ---
 
 **Note**: This application is intended for educational and small-scale institutional use. For production deployment with sensitive data, additional security measures and thorough testing are recommended.
