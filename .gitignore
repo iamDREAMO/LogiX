@@ -7,3 +7,4 @@ requirements.txt
 build
 dist
 main.spec
+.vscode
